@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <div class="demo">Hello!!</div>
+    <button class="a">empty</button>
+    <button class="b">remove</button>
+    <button class="c">css</button>
+
+    <button class="d">addclass</button>
+    <button class="e">removeclass</button>
+    <button class="f">toggleclass</button>
+
+    <button class="g">animate</button>
+    <button class="h">stop</button>
+    <button class="i">chain</button>
+
+
+    <style>
+        .san{
+            background-color: beige;
+            color:blue;
+        }
+        .demo{position:relative;}
+    </style>
+
+    <script>
+        $('.a').click(function(){
+            $('.demo').empty()
+        })
+        $('.b').click(function(){
+            $('.demo').remove()
+        })
+        $('.c').click(function(){
+            $('.demo').css({color:'pink',background:'brown'})
+        })
+        $('.d').click(function(){
+            $('.demo').addClass('san')
+        })
+        $('.e').click(function(){
+            $('.demo').removeClass('san')
+        })
+        $('.f').click(function(){
+            $('.demo').toggleClass('san')
+        })
+        $('.g').click(function(){
+            $('.demo').animate({left:'500px'},6000)
+        })
+        $('.h').mouseover(function(){
+            $('.demo').stop()
+        })
+        $('.i').click(function(){
+            $('.demo').slideUp().slideDown()
+        })
+        
+    </script>
+    
+</body>
+</html>

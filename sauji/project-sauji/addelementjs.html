@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Element in JS</title>
+</head>
+<body>
+    <h3>Adding</h3>
+    <button onclick="ab()">Add Element</button>
+    <script>
+        function ab(){
+            let aa= document.createElement('h3') //creating element to add element 
+            aa.appendChild(document.createTextNode('Hello I am create new element')) //adding text by using appendchild and for adding element .createTextNode is used to write new added element
+            document.body.appendChild(aa) //to display the element we have to display it in body so, in body appendchild is used
+        }
+    </script>
+</body>
+</html>

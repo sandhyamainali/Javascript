@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1>Demo</h1>
+    <button onclick="document.getElementsByTagName('h1')[0].innerHTML= 'Welcome to demo session'">Click Me</button>
+    <div class="a">
+        Welcome
+
+    </div>
+    <button onclick="document.getElementsByClassName('a')[0].innerHTML='Good Morning'"> change content</button>
+    <div id="s">
+        Nepal
+    </div>
+    <button onclick="document.getElementById('s').innerHTML=' Hello Good Morning'"> change content</button>
+
+    <hr>
+    <div class="app">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, possimus.
+    </div>
+    <button onclick="document.querySelector('.app').style.color='pink'">color</button>
+    <!-- querySelector:for id ,tag,class -->
+    
+    <button onclick="document.querySelector('.app').style.background='purple'">BG</button>
+    <button onclick="document.querySelector('.app').style.fontSize='60px'">font</button>
+    <button onclick="document.querySelector('.app').style.margin='20px'">Margin</button>
+
+    <button onclick="document.querySelector('.app').classList.add('i')">AddClass</button>
+    <button onclick="document.querySelector('.app').classList.remove('i')">RemoveClass</button>
+    <button onclick="document.querySelector('.app').classList.toggle('i')">ToggleClass</button>
+    <style>
+        .i{
+            font-size: 20px;
+            color:green;
+            background: yellow;
+        }
+    </style>
+
+
+<h2>Lorem ipsum dolor sit amet.</h2>
+<button onclick="document.getElementsByTagName('h2')[0].innerHTML='Hello'">Click ME</button>
+
+<div class="asd"> Brown </div>
+<button onclick="document.getElementsByClassName('asd')[0].innerHTML='Lets go!!'"> Here I am</button>
+
+<div id="san">
+    Photos
+</div>
+<button onclick="document.getElementById('san').innerHTML='Itis my photo'">Show</button>
+
+
+<hr>
+<hr>
+<div class="qwer">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nemo.
+</div>
+<button onclick="document.querySelector('.qwer').style.color='blue'">Touch Here</button>
+<button onclick="document.querySelector('.qwer').style.fontSize='37px'">Font</button>
+<button onclick="document.querySelector('.qwer').style.fontWeight='bold'">bold</button>
+<button onclick="document.querySelector('.qwer').style.background='red'">Bg</button>
+<button onclick="document.querySelector('.qwer').classList.toggle('x')">Toggle</button>
+<button onclick="document.querySelector('.qwer').classList.add('c')">add</button>
+<button onclick="document.querySelector('.qwer').classList.remove('c')">remove</button>
+
+<style>
+    .x{
+        background: pink;
+        font-size: 30px;
+    }
+    .c{
+        font-size: 20px;
+        font-style: italic;
+        background-color: aqua;
+    }
+</style>
+</body>
+
+</html>

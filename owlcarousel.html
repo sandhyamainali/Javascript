@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- <style>
+       .owl-carousel{width: 500px; height:200px;}
+    </style> -->
+</head>
+
+<body>
+
+    <div class="owl-carousel">
+        <div> 
+        <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg" alt="">    
+        </div>
+        <div> 
+            <img src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg" alt="">
+         </div>
+        <div> <img src="https://img-cdn.pixlr.com/image-generator/history/65772796905f29530816ea40/4ca9ba3d-c418-4153-a36a-77f4182236a7/medium.webp" alt=""></div>
+        <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE5fPhctwNLodS9VmAniEw_UiLWHgKs0fs1w&s" alt=""> </div>  
+    </div>
+   <button class="s">slide</button>
+   <button class="p">Pre</button>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $('.s').click(function(){
+            $('.owl-carousel').slideUp().slideDown();
+        })
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    navText: ["<button>nn</button>","<button>pppp</button>"],
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:2,
+            nav:true,
+            loop:true
+        }
+    }
+})
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Image</title>
+   
+</head>
+<body>
+    <img width= "100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHxuPLt9Tl22nT6ftc67n56CfpEse65zuU3Q&s" alt="">
+    <button onclick="document.querySelector('img').src='https://png.pngtree.com/thumb_back/fh260/background/20240801/pngtree-new-cb-background-images-photos-pics-wallpaper-pictures-image_16123145.jpg'">Click</button>
+    <button onclick="document.querySelector('img').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHxuPLt9Tl22nT6ftc67n56CfpEse65zuU3Q&s'">change</button>
+
+    <hr>
+    <input type="password" name="password" id="pass">
+    <button onclick="abc()" class="a">Show</button>
+
+    <script>
+        function abc(){
+            if(document.querySelector('#pass').type == 'password'){
+            document.querySelector('#pass').type='text'
+            document.querySelector('.a').innerHTML='Hide'
+        }
+        else{
+            document.querySelector('#pass').type='password'
+            document.querySelector('.a').innerHTML='Show'
+        }
+    }
+    </script>
+</body>
+</html>

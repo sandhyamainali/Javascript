@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM color </title>
+    <style>
+        
+        .a{
+            background: blue;
+            color:red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, repellat?</h1>
+    <div class="ab">This is toggle class</div>
+    <button onclick="document.querySelector('h1').style.background='red'">click</button>
+    
+    <button onclick="document.querySelector('.ab').classList.add('a')">add</button>
+    <button onclick="document.querySelector('.ab').classList.toggle('a')">toggle</button>
+</body>
+</html>

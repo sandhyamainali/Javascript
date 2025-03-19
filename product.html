@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var products=[
+            {id:1, name:'Device', category:'ElectronicDevice'},
+            {id:2, name:'Laptop', category:'ElectronicDevice'},
+            {id:3, name:'Suncream', category:'Makeup'},
+            {id:4, name:'foundation', category:'Makeup'},
+            {id:5, name:'DairyMilk', category:'chocolate'},
+            {id:6, name:'chocopie', category:'chocolate'},
+        ]
+        console.log(products)
+        var category=products.filter((a)=> a.category=='chocolate')
+        console.log(category)
+        {category.map((b)=>document.write(`<h2>${b.name}</h2>`))}
+    </script>
+    <script>
+        var Class=[
+            {id:1, name:'sandhya', address:'Bhaktapur'},
+            {id:2, name:'Andhya', address:'Bhartpur'},
+            {id:3, name:'Ndhya', address:'ktm'},
+            {id:4, name:'Dhya', address:'lalitpur'},
+        ]
+        var students=Class.filter((a)=>a.address=='Bhaktapur')
+        console.log(students)
+        {students.map((b)=>document.write(`${b.id}`) )}
+        {students.map((b)=>console.log(`${b.id}`) )}
+        
+    </script>
+</body>
+</html>

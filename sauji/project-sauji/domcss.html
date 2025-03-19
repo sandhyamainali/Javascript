@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Css</title>
+    <style>
+        .aa{
+            background-color: rgb(55, 20, 210);
+            color:azure;
+            font-size:50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Demo CSS</h2>
+    <button onclick="document.querySelector('h2').style.visibility='hidden'">Hide</button>
+    <button onclick="document.querySelector('h2').style.visibility='visible'">Show</button>
+    <button onclick="document.querySelector('h2').style.background='purple'">BG</button>
+    <button onclick="document.querySelector('h2').style.color='yellow'">color</button>
+    <button onclick="document.querySelector('h2').style.fontSize='55px'">fs</button>
+    <button onclick="abcd()">all</button>
+    <button onclick="document.querySelector('h2').classList.add('aa')">Addclass</button>
+    <button onclick="document.querySelector('h2').classList.remove('aa')">Removeclass</button>
+    <button onclick="document.querySelector('h2').classList.toggle('aa')">Toggleclass</button>
+    <script>
+        function abcd(){
+            let aa=document.querySelector('h2');
+            aa.style.fontSize='30px';
+            aa.style.background= 'Red';
+            aa.style.color='yellow'
+        }
+    </script>
+</body>
+</html>

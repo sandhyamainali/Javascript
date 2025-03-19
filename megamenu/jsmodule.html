@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Concept</title>
+</head>
+<body>
+    <script type="module">
+        // module import and export cocept default export, naming export
+        import aa,{ABC} from './jsmodule.js'
+        console.log(aa,ABC())
+
+    </script>
+
+    <!-- destructure -->
+     <!-- It will structure all the values using array and to print all we have to use ... rest -->
+      <!-- for object it will also be same for object we have to use object concept key shoulde be given while taken object -->
+
+      <h3>Array destructuring</h3>
+      <script>
+        let fruits= ['Apple', 'Mango', 'Banana']
+        let[a,b, ...c]=fruits
+        console.log(a)
+        console.log(c)
+      </script>
+      object destructuring
+      <script>
+      let person={
+        name:'sita',
+        age:21,}
+        let {name,age}=person
+        console.log(name)
+    </script>
+</body>
+</html>

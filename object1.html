@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj={name:"sita",age:30}
+        console.log(obj)
+
+        var data=[{name:"ram", age:30},{name:"shyam", age:40}, {name:"hari", age:50}]
+        var dataobj=data.map((a)=>a.name)
+        var dataobj=data.filter((a)=>a.age>30)
+        console.log(data)
+        console.log(dataobj)
+
+
+
+        var stds=[
+            {name:'sita', level:'B',age:20},
+            {name:'shyam',level:'M',age:25},
+            {name:'sarita',level:'B',age:22},
+            {name:'hari',level:'M',age:27},
+            {name:'ram',level:'M',age:30},
+            {name:'sita',level:'B',age:20},
+            {name:'shyam',level:'M',age:25},
+            {name:'sarita',level:'B',age:22},
+            {name:'hari',level:'M',age:27},
+            {name:'ram',level:'M',age:30},
+            {name:'sita',level:'B',age:20},
+            {name:'shyam',level:'M',age:25},
+            {name:'sarita',level:'B',age:22},
+            {name:'hari',level:'M',age:27},
+            {name:'ram',level:'M',age:30},
+            
+        ]
+        console.log(stds)
+        var bachelor=stds.filter((a)=>a.level=='B')
+        var master=stds.filter((a)=>a.level=="M")
+        console.log(bachelor)
+        document.write(`<h1> The number of students are: ${stds.length}</h1>`)
+        document.write(`<h1> The number of bachelor students are: ${bachelor.length}</h1>`)
+        document.write(`<h1> The number of masters students are: ${master.length}</h1>`)
+
+
+        var product=[
+            {id:1, name:'Device', category:'ElectronicDevice'},
+            {id:2, name:'Laptop', category:'ElectronicDevice'},
+            {id:3, name:'Suncream', category:'Makeup'},
+            {id:4, name:'foundation', category:'Makeup'},
+            {id:5, name:'DairyMilk', category:'chocolate'},
+            {id:6, name:'chocopie', category:'chocolate'},
+        ]
+       console.log(product)
+       var category=product.filter((a)=>a.category=="ElectronicDevice")
+       document.write(`<h1> The number of ElectronicDevice are: ${category.length}</h1>`)
+       var name=product.map((a)=>a.name)
+       document.write(`<h1> The name of products are: ${name}</h1>`)
+       var id=product.map((a)=> a.id)
+       document.write(`<h1> The id of products are: ${id}</h1>`)
+    </script>
+</body>
+</html>

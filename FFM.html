@@ -1,0 +1,84 @@
+//find filter and map concept
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var number=[1,2,3,4,5,6,7,8,9]
+        function check(data){
+            return data >5
+        }
+        var a=number.find(check)
+        document.write("<h5> This is the concept of find in array: which give only one data :</h5>"+a)
+        var s=number.filter(check)
+        document.write("<h5> This is the concept of filter in array: which give multiple data:</h5>"+s)
+
+        var peo = [
+    { name: 'John', age: 24 },
+    { name: 'Jane', age: 32 },
+    { name: 'Sam', age: 40 }
+];
+// function name(data){
+//     return data.age>30
+// }
+// var c=peo.find(name)
+// var c=peo.filter(name)
+var d=peo.find((data)=>data.age>30)
+var c=peo.filter((data)=>data.age>20)
+console.log(c)
+console.log(d)
+
+console.log(peo.sort())
+// if (c){
+//     document.write(c.name)
+// }
+// else{
+//     document.write("No data found")
+// }
+
+
+
+
+const team = [
+  { name: "Bill", age: 10 },
+  { name: "Linus", age: 15 },
+  { name: "Alan", age: 20 },
+  { name: "Steve", age: 34 },
+];
+// function Adult(name){
+//     return name.age>10
+// }
+// var d= team.find(Adult)
+// var e=team.filter(Adult)
+// console.log(d)
+// console.log(e)
+
+var sh=team.filter((name)=>name.age>10)
+console.log(sh)
+
+var num=[1,2,3,4,5,6,7,8,9]
+var even=num.filter((b)=>b%2==0)
+var odd=num.filter((o)=>o%2==1)
+console.log(odd)
+console.log(even)
+
+
+var s=parseInt(prompt("Enter a number"))
+var display=num.filter((c)=>c !== s)
+console.log(display)
+
+//Map Concept
+var number=[1,2,3,4,5,6,7,8,9]
+var a=number.map((a)=>a*3)
+var data=[144,9,16,49]
+var b=data.map((b)=>Math.sqrt(b))
+console.log(b)
+console.log(a)
+    </script>
+</body>
+</html>

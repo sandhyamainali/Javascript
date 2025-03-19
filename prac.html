@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice </title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script src="prac.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <div class="pra">Welcome!!</div>
+    <button class="a">empty</button>
+    <button class="b">remove</button>
+    <button class="c">toggle</button>
+
+    <button class="d">addclass</button>
+    <button class="e">removeclass</button>
+    <button class="f">toggleclass</button>
+
+    <button class="g">animate</button>
+    <button class="h">stop</button>
+
+
+    <script>
+        $('.a').click(function(){
+            $('.pra').empty()
+        })
+        $('.b').click(function(){
+            $('.pra').remove()
+        })
+        $('.c').click(function(){
+            $('.pra').toggle()
+        })
+        $('.d').click(function(){
+            $('.pra').addClass('abc')
+        })
+        $('.e').click(function(){
+            $('.pra').removeClass('abc')
+        })
+        $('.f').click(function(){
+            $('.pra').toggleClass('abd')
+        })
+        $('.g').click(function(){
+            $('.pra').animate({left:'500px'},4000)
+        })
+        $('.h').mouseover(function(){
+            $('.pra').stop()
+        })
+    </script>
+
+</body>
+</html>

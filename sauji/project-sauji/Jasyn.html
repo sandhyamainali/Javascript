@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous Behaviour</title>
+</head>
+<body>
+    <!-- Asynchronous in js (line by line print) multitasking-->
+     1.settimeout (block of code after special time) asyn behaviour: function hunxa katye sec pachi load garney vaney rw hunxa
+    <br>
+     2. Callback:Argument can be pass in function 
+     <br>
+     3. Promise: object (carry three state:pending,fullfill, reject):cretaing by using new promise using func(resolve,reject)
+     then:if fullfill (.then is used)- used for data fetching
+     catch: if fail(.catch is used)- used for datafetching
+    <script>
+        let a=1
+        let b=3
+        function greet(){
+            console.log("Hello World");
+        }
+        console.log(a)
+        setTimeout(greet,3000)
+        console.log(b)
+
+        //callback: function callback garne we have to def fuction name in paramter as seen below
+
+        function goodmorning(name, good){ 
+            console.log(name,'morning')
+            good()
+        }
+        function goodbye(){
+            console.log("Bye")
+        }
+        goodmorning('Sarita',goodbye)
+
+        //callback wit asyncrous
+        function dataFetch(callback){
+            setTimeout(()=>{
+                console.log('data fetching')
+                callback()
+            },3000)
+        }
+        function dataprint(){
+            console.log('data display')
+        }
+        dataFetch(dataprint)
+
+        // Promise
+        let abc=new Promise((resolve, reject) =>{
+            let sucess=true
+            if(sucess){
+                resolve("Hello Sucess")
+            }
+            else{
+                reject("Reject")
+            }
+        })
+        abc.then(()=>console.log("Happy")).catch(()=>console.log("Sad"))
+        //above line says that if the promise is sucess it will print Happy and if fail it will print sad
+
+        fetch('https://fakestoreapi.com/products/categories').then(a=>a.json()).then(c=>console.log(c))
+        //above line says that fake api is used for fetching data and then is used in case of sucess if fetch is sucess then is 
+        // used and variable is used to print the data and convert it into the json data after converting it to json data then for displaying data....another variable is used called c and print it in console
+
+    </script>
+    </body>
+</html>

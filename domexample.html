@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+</head>
+<style>
+    .a > div{
+        width:25px;
+        height:3px;
+        background: black;
+        margin:1px;
+        transition: 0.9s;
+    }
+   .q .e{display: none;}
+    .q .s{transform: rotate(30deg) translate(0px,4px);}
+    .q .r{transform: rotate(-30deg) translate(-3px,-2px);}
+
+    .s > div{
+
+        width:23px;
+        height:3px;
+        background-color: #000;
+        margin:1px;
+        transition: 0.9s;
+        gap:10px;
+        
+    }
+    .g .b{display: none;}
+    .g .a{transform: rotate(30deg) translate(0px,4px);}
+    .g .c{transform: rotate(-30deg) translate(-3px,-2px);}
+    .mm{width:240px;}
+    .m{bottom:0px;
+    }
+    .me{width:350px;}
+   
+    aside{
+        width:0px;
+        height:100vh;
+        background: pink;
+        position: fixed;
+        right:0;
+        top:0;
+        transition: 0.9s;
+    }
+    footer{
+        width:100%;
+        height:10vh;
+        background: yellow;
+        position:fixed;
+        bottom: -100px;
+        left: 0;
+        transition:0.9s;
+    }
+
+header{
+    width:100%;
+    height:10vh;
+    background: green;
+    position:fixed;
+    top:20;
+    left:0px;
+   
+    transition: 0.9s;
+
+}
+
+</style>
+<body>
+    <div class="a" onclick="abc(this)">
+        <div class="s"></div>
+        <div class="e"></div>
+        <div class="r"></div>
+    </div>
+    <div class="s" onclick="and(this)">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+
+    </div>
+   
+    <aside></aside>
+   
+    <footer></footer>
+    <header></header>
+    <script>
+        function abc(x){
+            x.classList.toggle('q')
+            document.querySelector('aside').classList.toggle('mm')
+            
+            
+        }
+        
+        function and(w){
+            w.classList.toggle('g')
+            document.querySelector('footer').classList.toggle('m')
+            document.querySelector('header').classList.toggle('.me')
+        }
+    </script>
+</body>
+</html>

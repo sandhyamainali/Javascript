@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Revision</title>
+</head>
+<body>
+    <h1>Demo <mark>aa</mark></h1> <h1>Test</h1>
+        <div class="demo">Class <mark>aaa</mark></div>
+        <div id="demo">Demo ID</div>
+
+        <script>
+            console.log(document.getElementsByTagName('h1')[0].innerHTML)
+            console.log(document.getElementsByClassName('demo')[0].innerText)
+            console.log(document.getElementById('demo').innerText)
+            //or
+            console.log(document.querySelector('h1').innerHTML)
+            console.log(document.querySelectorAll('h1')[1].innerHTML)
+            console.log(document.querySelector('.demo').innerText)
+            console.log(document.querySelector('#demo').innerText)
+        </script>
+
+    </h1>
+</body>
+</html>
